@@ -1,5 +1,5 @@
 import React from "react";
-
+import {motion} from "framer-motion"
 import { SubHeading } from "../../components";
 import { images } from "../../constants";
 import "./Chef.scss";
@@ -10,7 +10,13 @@ const Chef = () => (
       <img src={images.chef} alt="chef" />
     </div>
 
-    <div className="app__wrapper_info">
+    <motion.div 
+    initial={{opacity: 0,scale:0 , y:'-50%' }}
+    whileInView={{opacity: 1,scale:1 , y:0 }}
+    transition={{duration:0.7}}
+    viewportonc={{e:true, amount:0.25}}
+    className="app__wrapper_info"
+    >
       <SubHeading title="Chef's Word" />
       <h1 className="headtext__cormorant"> What We Believe In</h1>
 
@@ -33,7 +39,7 @@ const Chef = () => (
         <p className="p__opensans"> Chef & Founder</p>
         <img src={images.sign} alt="sign" />
       </div>
-    </div>
+    </motion.div>
   </div>
 );
 

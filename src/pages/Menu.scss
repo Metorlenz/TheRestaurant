@@ -1,0 +1,75 @@
+
+.menu__card {
+
+    display: flex;
+    justify-content: space-around;
+    gap: 70px;
+     
+
+    @media screen and (max-width: 1150px) {
+         
+        flex-direction:column;
+        justify-content: space-between;
+        gap: 70px;
+
+}
+
+   .menu__food {
+
+        display: flex;
+        flex-direction: column;
+        width: 410px;
+        height: 682px;
+
+      
+
+        .menu__menu-img-back,
+        .menu__menu-img-front {
+            position: absolute;
+            width: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+           
+       
+     
+     }
+
+        .menu__food-title {
+            margin-right: 100px;
+            
+           
+        }
+
+   }
+        
+}
+
+.menu__title {
+  margin-bottom: 100px;
+  text-align: center;
+
+
+  @media screen and (max-width: 1150px) {
+         
+    margin-bottom: 45px;
+
+}
+}
+
+.menu__container {
+
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 2s;
+}
+
+.flip {
+    transform:rotateY(180deg);
+    
+}
+
+.menu__menu-img-back {
+    transform:rotateY(180deg);
+
+   
+}

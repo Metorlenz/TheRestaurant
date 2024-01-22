@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import bg from '../assets/bg.png';
 import chef from '../assets/chef.png';
 import G from '../assets/G.png';
@@ -20,8 +21,15 @@ import award05 from '../assets/award05.png';
 import sign from '../assets/sign.png';
 import quote from '../assets/quote.png';
 import gericht from '../assets/gericht.png';
-
+import About from '../assets/About.jpg'
+import Vision from '../assets/Vision.jpg'
+import Fruits from '../assets/fruits.jpg'
+import Salad from '../assets/salad.jpg'
+import Menus from '../assets/menus.jpg'
+import Food from '../assets/food.jpg'
+import Wine from '../assets/wine.jpg'
 export default {
+  About,
   bg,
   chef,
   G,
@@ -44,4 +52,10 @@ export default {
   sign,
   quote,
   gericht,
+  Vision,
+  Food,
+  Fruits,
+  Menus,
+  Salad,
+  Wine
 };
